@@ -12,10 +12,6 @@ function AnimatedBackground({ children }) {
     canvas.height = window.innerHeight;
     matrixContainer.appendChild(canvas);
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-    matrixContainer.appendChild(canvas);
-
     const columns = canvas.width / 20;
     const drops = Array(Math.floor(columns)).fill(0);
 
