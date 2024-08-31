@@ -10,7 +10,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden; /* Ensure no overflow */
-  /* z-index: -1; */
+  /* z-index: -1; This is causing the icons to not react with the clicks*/
 }
 
 
