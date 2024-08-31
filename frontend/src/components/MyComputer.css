@@ -1,0 +1,36 @@
+/* MyComputer.css */
+
+.my-computer, .file-explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #00ff99, 0 0 30px #00ff99, 0 0 45px #00ff99;
+}
+
+.icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.icon span {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #00ff99; /* Neon green color */
+}

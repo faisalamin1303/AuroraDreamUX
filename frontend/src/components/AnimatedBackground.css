@@ -1,0 +1,62 @@
+/* src/components/AnimatedBackground.css */
+
+/* Set the wallpaper as the background */
+.wallpaper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/background.png') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 1;
+  }
+  
+  /* Matrix animation */
+  .matrix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 2;
+    overflow: hidden;
+    color: #00ff00; /* Matrix green color */
+    opacity: 0.5; /* Slight transparency to blend with wallpaper */
+  }
+  
+  @keyframes matrix-animation {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  
+  /* Create columns of matrix code */
+  .matrix::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, transparent 75%, rgba(0, 255, 0, 0.2) 100%);
+    background-size: 1px 100%;
+    animation: matrix-animation 10s linear infinite;
+  }
+  
+  /* Content overlay */
+  .content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    pointer-events: auto;
+  }
+  

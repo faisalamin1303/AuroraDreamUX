@@ -1,0 +1,95 @@
+/* FileExplorer.css */
+
+.file-explorer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the explorer */
+    border: 2px solid #00ff99; /* Neon border */
+    border-radius: 15px;
+    box-shadow: 0 0 20px #00ff99;
+  }
+  
+  .toolbar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.5);
+    justify-content: space-between;
+  }
+  
+  .toolbar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  .toolbar button img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .toolbar .path-display {
+    flex-grow: 1;
+    color: #00ff99; /* Neon green color */
+    font-size: 16px;
+  }
+  
+  .drive-links button {
+    background: none;
+    border: none;
+    color: #00ff99; /* Neon green color */
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition: transform 0.3s;
+  }
+  
+  .drive-links button:hover {
+    transform: scale(1.1);
+  }
+  
+  .file-grid {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); */
+    grid-template-columns: repeat(5, 120px);
+    gap: 20px;
+    align-items: start;
+  }
+  
+  .icon {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ff99, 0 0 30px #00ff99, 0 0 45px #00ff99;
+  }
+  
+  .icon img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .icon span {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #00ff99; /* Neon green color */
+    text-align: center;
+    word-wrap: break-word;
+  }
+  

@@ -1,0 +1,35 @@
+/* Dock.css */
+
+.dock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    width: 80%;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.5);
+  }
+  
+  .dock-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+  }
+  
+  .dock-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .dock-icon:hover {
+    transform: scale(1.2);
+  }
+  
