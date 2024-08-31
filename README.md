@@ -1,2 +1,2 @@
 # AuroraDreamUX
-Step into a Dreamy Digital Experience
+Step into a Dreamy User Experience
