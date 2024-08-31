@@ -1,6 +1,8 @@
 /* Desktop.css */
 
 .desktop {
+  position: relative; /* Ensure it is relative to parent */
+  z-index: 4; /* Higher than content to ensure visibility */
   display: grid;
   grid-template-columns: repeat(5, 120px);
   gap: 20px;

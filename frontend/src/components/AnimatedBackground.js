@@ -2,11 +2,15 @@
 import React, { useEffect } from 'react';
 import './AnimatedBackground.css';
 
-function AnimatedBackground() {
+function AnimatedBackground({ children }) {
   useEffect(() => {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
     const matrixContainer = document.querySelector('.matrix');
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    matrixContainer.appendChild(canvas);
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -43,7 +47,7 @@ function AnimatedBackground() {
       <div className="matrix"></div>
       <div className="wallpaper"></div>
       <div className="content">
-        {/* Your application content will be passed here as children */}
+         {children}
       </div>
     </div>
   );
