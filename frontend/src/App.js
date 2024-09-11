@@ -6,7 +6,7 @@ import AnimatedBackground from './components/AnimatedBackground'; // Import the 
 import './App.css';
 
 function App() {
-  const [view, setView] = useState('mycomputer'); // 'desktop' or 'mycomputer'
+  const [view, setView] = useState('desktop'); // 'desktop' or 'mycomputer'
 
   return (
     <AnimatedBackground>

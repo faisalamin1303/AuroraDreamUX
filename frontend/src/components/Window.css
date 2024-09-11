@@ -1,0 +1,37 @@
+/* Window.css */
+
+.window {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 153, 0.5);
+  overflow: hidden;
+  z-index: 10;
+  cursor: default;
+}
+
+.window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #00ff99;
+  padding: 10px;
+  cursor: move;
+}
+
+.window-content {
+  padding: 20px;
+  height: calc(100% - 40px); /* Adjust based on header height */
+  overflow: auto;
+}
+
+.window-resizer {
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 255, 153, 0.5);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
